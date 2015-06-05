@@ -1,0 +1,8 @@
+services:
+    dmzx.topicviews.listener:
+        class: dmzx\topicviews\event\listener
+        arguments:
+            - @template
+            - @user
+        tags:
+            - { name: event.listener }
